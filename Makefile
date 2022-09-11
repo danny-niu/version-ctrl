@@ -6,3 +6,4 @@ build:
 
 run:
 	go run main.go
+	echo "run done!"
