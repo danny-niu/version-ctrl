@@ -1,4 +1,4 @@
-# project describetion version-ctrl
+# project description version-ctrl
 this is a test
 # 1. 创建一个新分支
 ```bash
@@ -8,6 +8,8 @@ this is a test
 ## 查看修改的文件
 ```bash
 git status
+# 如果有人提交新代码，需要将新代码更新到本地
+git pull
 ```
 ## 查看修改的内容
 ```bash
