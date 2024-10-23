@@ -1,9 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+)
+
+func HelloHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hello World")
+}
 
 func main() {
-	// demo
-	fmt.Println("hello 1")
-	fmt.Println("git branch update main.go file")
+	http.HandleFunc("/demo/hello", HelloHandler)
+	http.ListenAndServe(":8000", nil)
 }
